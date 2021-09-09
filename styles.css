@@ -1,0 +1,376 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+/*Global Styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #ffe6f26c;
+    --secondary-font-color-fullop: #ffe6f2;
+    --body-font-color: #515151;
+}
+
+html {
+    font-family: var(--body-font);
+    font-size: 10px;
+    color: var(--body-font-color);
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 3.9rem 0;
+    margin-bottom: 5rem;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.btn-main {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  width: 10rem;
+  text-align: center;
+  border: solid var(--main-font-color-dark) 1px;
+  background-color: var(--secondary-font-color);
+}
+
+.btn-hero {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  width: 20rem;
+  text-align: center;
+  border: solid var(--main-font-color-dark) 1px;
+  background-color: var(--secondary-font-color-fullop);
+}
+
+/* Header */
+.navbar {
+  height: 8rem;
+  font-size: 1.5rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+}
+
+
+
+
+/* Hero Styles */
+.hero {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    width: 100%;
+    height: 100vh;
+    background: url('images/hero.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-headline {
+    font-size: 17rem;
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+    font-weight: 100;
+    line-height: .4;
+    letter-spacing: 2px;
+}
+
+.first-letter {
+    text-transform: uppercase;
+    font-size: 10.3rem;
+}
+
+.headline {
+    color: #fff;
+    font-size: 6rem;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-right: -.5rem;
+}
+
+.separator {
+    display: flex;
+    
+}
+
+/* Services Styles */
+.card {
+    border: rgba(233, 233, 233, 0.555) solid 1px;
+    
+}
+
+.card-title {
+    font-size: 2rem;
+}
+
+/* Our Process Styles */
+.our-process {
+    background-color: #ffe6f26c;
+}
+
+.process-desc {
+    border: var(--main-font-color-dark) solid 1px;
+    padding: 5rem 10rem 5rem 10rem;
+}
+
+.process-desc p {
+    font-size: 2rem;
+    margin-bottom: 70px;
+}
+
+.process-desc p a {
+    font-size: 3rem;
+    color: var(--main-font-color-dark);
+    background-color: rgba(0, 0, 0, 0.027);
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+/* Testimonial Styles */
+
+.testimonials-clean p {
+  color:#000000;
+}
+
+.testimonials-clean h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .testimonials-clean h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.testimonials-clean .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.testimonials-clean .intro p {
+  margin-bottom:0;
+}
+
+.testimonials-clean .people {
+  padding:50px 0 20px;
+}
+
+.testimonials-clean .item {
+  margin-bottom:32px;
+  
+}
+
+@media (min-width:768px) {
+  .testimonials-clean .item {
+    height:220px;
+  }
+}
+
+.testimonials-clean .item .box {
+  padding:30px;
+  background-color:var(--secondary-font-color);
+  position:relative;
+}
+
+.testimonials-clean .item .box:after {
+  content:'';
+  position:absolute;
+  left:30px;
+  bottom:-24px;
+  width:0;
+  height:0;
+  border:15px solid transparent;
+  border-width:12px 15px;
+  border-top-color:var(--secondary-font-color);
+}
+
+.testimonials-clean .item .author {
+  margin-top:28px;
+  padding-left:25px;
+}
+
+.testimonials-clean .item .name {
+  font-weight:bold;
+  margin-bottom:2px;
+  color:inherit;
+}
+
+.testimonials-clean .item .title {
+  font-size:13px;
+  color:#9da9ae;
+}
+
+.testimonials-clean .item .description {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+.testimonials-clean .item img {
+  max-width:40px;
+  float:left;
+  margin-right:12px;
+  margin-top:-5px;
+}
+
+/* Contact Styles */
+
+
+.gradient-brand-color {
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color-dark);
+}
+.contact-info__wrapper {
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0;
+    
+}
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 5rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+}
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+@media (min-width: 1024px) {
+    .contact__wrapper {
+        border-radius: .625rem 0 .625rem .625rem
+    }
+}
+@media (min-width: 1024px) {
+    .contact-form__wrapper {
+        padding: 5rem !important
+    }
+}
+.shadow-lg, .shadow-lg--on-hover:hover {
+    box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+   
+@media(max-width: 932px) {
+  .display-none {
+  display: none !important;
+  }
+}
+
+/* Footer Styles */
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:var(--main-font-color-dark);
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+
+
+
+/* Breakpoints */
+@media (max-width: 480px) {
+    .process-desc p a {
+        background-color: rgba(0, 0, 0, 0);
+    }
+  }
